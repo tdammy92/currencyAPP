@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency App</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="loader">
+            <!-- TODO: loader goes here -->
+            <div class="loaderCircle">
+
+            </div>
+        </div>
+
+        <section class="heading">
+            <i style="text-align: center;" class="fa fa-money fa-5x"></i>
+            <h2>Currency App</h2>
+            <p>Convert from one currency to another</p>
+        </section>
+
+
+
+        <section>
+            <hr>
+
+            <div class="currencyDiv">
+                <select class="selectBtn" name="" id="currency1">
+                  
+                        <option value="CAD">CAD</option>
+                        <option value="HKD">HKD</option> 
+                        <option value="LVL">LVL</option> 
+                        <option value="PHP">PHP</option> 
+                        <option value="DKK">DKK</option> 
+                        <option value="HUF">HUF</option> 
+                        <option value="CZK">CZK</option> 
+                        <option value="AUD">AUD</option> 
+                        <option value="RON">RON</option> 
+                        <option value="SEK">SEK</option> 
+                        <option value="IDR">IFR</option> 
+                        <option value="INR">INR</option> 
+                        <option value="BRL">BRL</option> 
+                        <option value="RUB">RUB</option> 
+                        <!-- <option value="LTL">LTL</option>  -->
+                        <option value="JPY">JPY</option> 
+                        <option value="THB">THB</option> 
+                        <option value="CHF">CHF</option> 
+                        <option value="SGD">SGD</option> 
+                        <option value="PLN">PLN</option> 
+                        <option value="BGN">BGN</option> 
+                        <option value="TRY">TRY</option> 
+                        <option value="CNY">CNY</option> 
+                        <option value="NOK">NOK</option> 
+                        <option value="NZD">NZD</option> 
+                        <option value="ZAR">ZAR</option> 
+                        <option value="USD" selected>USD</option> 
+                        <option value="MXN">MXN</option> 
+                        <option value="EEK">EEK</option> 
+                        <option value="GBP">GBP</option> 
+                        <option value="KRW">KRW</option> 
+                        <option value="MYR">MYR</option> 
+                        <option value="HRK">HRK</option> 
+                </select>
+
+
+
+                <input type="number" class="amount" name="" id="input1" value="1" placeholder="1">
+            </div>
+
+            <div class="sidefixed">Rate</div>
+            <div class="display"></div>
+
+
+
+            <div class="currencyDiv">
+                <select class="selectBtn" name="" id="currency2">
+                  
+                        <option value="CAD">CAD</option>
+                        <option value="HKD">HKD</option> 
+                        <option value="LVL">LVL</option> 
+                        <option value="PHP">PHP</option> 
+                        <option value="DKK">DKK</option> 
+                        <option value="HUF">HUF</option> 
+                        <option value="CZK">CZK</option> 
+                        <option value="AUD">AUD</option> 
+                        <option value="RON">RON</option> 
+                        <option value="SEK">SEK</option> 
+                        <option value="IDR">IFR</option> 
+                        <option value="INR">INR</option> 
+                        <option value="BRL">BRL</option> 
+                        <option value="RUB">RUB</option> 
+                        <!-- <option value="LTL">LTL</option>  -->
+                        <option value="JPY">JPY</option> 
+                        <option value="THB">THB</option> 
+                        <option value="CHF">CHF</option> 
+                        <option value="SGD">SGD</option> 
+                        <option value="PLN">PLN</option> 
+                        <option value="BGN">BGN</option> 
+                        <option value="TRY">TRY</option> 
+                        <option value="CNY">CNY</option> 
+                        <option value="NOK">NOK</option> 
+                        <option value="NZD">NZD</option> 
+                        <option value="ZAR">ZAR</option> 
+                        <option value="USD">USD</option> 
+                        <option value="MXN">MXN</option> 
+                        <option value="EEK">EEK</option> 
+                        <option value="GBP">GBP</option> 
+                        <option value="KRW">KRW</option> 
+                        <option value="MYR">MYR</option> 
+                        <option value="HRK">HRK</option> 
+                </select>
+
+
+
+                <input type="number" class="amount" name="" id="input2" placeholder="0">
+            </div>
+
+            <hr>
+
+
+        </section>
+
+        <!-- <section>
+
+            <div class="currencyHistory">
+
+                <label for="currencyHistory">Get Exchange history</label>
+                <select class="selectBtn" name="" id="currencyHistory">
+                  <option  selected="true" disabled="disabled">Pick Currency</option>
+                        <option value="CAD">CAD</option>
+                        <option value="HKD">HKD</option> 
+                        <option value="LVL">LVL</option> 
+                        <option value="PHP">PHP</option> 
+                        <option value="DKK">DKK</option> 
+                        <option value="HUF">HUF</option> 
+                        <option value="CZK">CZK</option> 
+                        <option value="AUD">AUD</option> 
+                        <option value="RON">RON</option> 
+                        <option value="SEK">SEK</option> 
+                        <option value="IDR">IFR</option> 
+                        <option value="INR">INR</option> 
+                        <option value="BRL">BRL</option> 
+                        <option value="RUB">RUB</option> 
+                        <option value="LTL">LTL</option> 
+                        <option value="JPY">JPY</option> 
+                        <option value="THB">THB</option> 
+                        <option value="CHF">CHF</option> 
+                        <option value="SGD">SGD</option> 
+                        <option value="PLN">PLN</option> 
+                        <option value="BGN">BGN</option> 
+                        <option value="TRY">TRY</option> 
+                        <option value="CNY">CNY</option> 
+                        <option value="NOK">NOK</option> 
+                        <option value="NZD">NZD</option> 
+                        <option value="ZAR">ZAR</option> 
+                        <option value="USD">USD</option> 
+                        <option value="MXN">MXN</option> 
+                        <option value="EEK">EEK</option> 
+                        <option value="GBP">GBP</option> 
+                        <option value="KRW">KRW</option> 
+                        <option value="MYR">MYR</option> 
+                        <option value="HRK">HRK</option> 
+                </select>
+
+                <input type="date" name="" id="datePicker">
+            </div>
+
+
+            <table id="tableDetails">
+
+                <table>
+                    <tr>
+                        <th>Month</th>
+                        <th>Savings</th>
+                    </tr>
+                    <tr>
+                        <td>January</td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td>February</td>
+                        <td>$80</td>
+                    </tr>
+                </table>
+
+            </table>
+        </section> -->
+
+
+
+    </div>
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
